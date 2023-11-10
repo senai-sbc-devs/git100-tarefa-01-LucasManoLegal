@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/Javascript" src="script.js"></script>
+    <title>GitHub</title>
+</head>
+<body>
+
+<div class="container">
+    <!---- itens do menu--->
+    <nav>
+        <ul>
+            <li><h4 style="color: white;">MENU</h4></li>
+            <li><a href="#cabecalho">Início</a></li>
+            <li><a href="#Clone">Clone</a></li>
+            <li><a href="#Branch">Branch</a></li>
+            <li><a href="#Commit">Commit</a></li>
+            <li><a href="#Merge">Merge</a></li>
+            <li><a href="#PullRequest">PullRequest</a></li>
+        </ul>
+    </nav>
+    <!---- conteudo do site--->
+    <section>
+        <!---- cabeçalho--->
+        <header id="#cabecalho">
+            <h1>Fluxo detrabalho do Git e GitHub</h1>
+            <p>Este é um site simples com o objetivo de explicar o fluxo de trabalho com o Git e GitHub.</p>
+        </header>
+        <!---- conteudo principal--->
+        <main>
+            <div id="Clone">
+                <h1>Clone</h1>
+                <h3>Definição:</h3>
+                <p>Clonar um repositório Git significa criar uma cópia exata do repositório remoto em sua máquina local.</p>
+                <h2>Como Usar:</h2>
+                <p>O comando básico para clonar um repositório é git clone URL_do_repositório. Isso cria uma cópia local do repositório em seu computador, permitindo que você trabalhe nele.</p>
+            </div>
+            <div id="Branch">
+                <h1>Branch</h1>
+                <h3>Definição:</h3>
+                <p>Um branch é uma ramificação separada no histórico do repositório, permitindo que você trabalhe em novas funcionalidades ou correções de bugs sem interferir no código principal.</p>
+                <h2>Como Usar:</h2>
+                <p>Para criar um novo branch, você usa o comando git branch nome_do_branch. Para mudar para um branch existente, use git checkout nome_do_branch ou, a partir do Git 2.23, git switch nome_do_branch.</p>
+            </div>
+            <div id="Commit">
+                <h1>Commit</h1>
+                <h3>Definição:</h3>
+                <p>Um commit é um ponto no histórico do repositório que armazena as alterações feitas nos arquivos. Cada commit tem uma mensagem associada que descreve as mudanças realizadas.</p>
+                <h2>Como Usar:</h2>
+                <p>Após realizar alterações nos arquivos, você usa git add nome_do_arquivo para preparar as mudanças e git commit -m "Mensagem do commit" para confirmar essas alterações.</p>
+            </div>
+            <div id="Merge">
+                <h1>Merge</h1>
+                <h3>Definição:</h3>
+                <p>Merging é o processo de combinar as alterações de diferentes branches. Isso é geralmente feito para incorporar o trabalho de um branch de recurso de volta ao branch principal.</p>
+                <h2>Como Usar:</h2>
+                <p>Após concluir o trabalho em um branch, você pode mesclá-lo de volta ao branch principal usando git merge nome_do_branch.</p>
+            </div>
+            <div id="PullRequest">
+                <h1>PullRequest</h1>
+                <h3>Definição:</h3>
+                <p>MEm sistemas como o GitHub, GitLab ou Bitbucket, um pull request (também conhecido como merge request) é uma solicitação para mesclar as alterações de um branch para outro. Isso é comumente usado em colaboração, permitindo que outros revisem e comentem sobre as mudanças antes que sejam mescladas.</p>
+                <h2>Como Usar:</h2>
+                <p>Após concluir as alterações em um branch, você cria um pull request na plataforma de hospedagem do seu repositório. Outros membros da equipe podem revisar as mudanças antes de serem mescladas no branch principal.</p>
+            </div>
+        </main>
+        <!---- Rodapé da página--->
+        <footer>
+            Todos os direitos reservados a <a  target="_blank"  href="https://github.com/LucasManoLegal">Lucas Marques</a>
+        </footer>
+    </section>
+</div>
+</body>
+</html>
