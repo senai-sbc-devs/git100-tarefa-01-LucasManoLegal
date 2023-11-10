@@ -17,7 +17,7 @@ nav{
     top: 0;
     display: block;
     height: 200vh;
-    width: 20%;
+    width: 25%;
     color: white;
     background-color: black;
     text-align: center;
@@ -27,7 +27,7 @@ nav ul {
     list-style-type: none;
     margin: 10px 0px 0px 0px;
     padding: 5px;
-    width: 18%;
+    width: 22%;
     background-color: black;
     position: fixed;
     height: 200vh;
@@ -62,11 +62,13 @@ p {
 section{
     flex-direction: column;
     padding: 20px;
-    margin-left: 20%;
+    margin-left: 25%;
 }
 /*css das divisões da página*/
-div{
-    margin: 75px solid black;
+section div{
+    border: 3px solid black;
+    margin-top: 10px;
+    padding: 10px;
 }
 /*css do rodapé*/
 footer{
@@ -79,8 +81,8 @@ a:hover{
     color: white;
 }
 /*media quary para responsividade*/
-@media(max-width:600px){
-    section{margin-left:50%;font-size: small;}
-    nav{width: 50%;}
-    nav ul{width: 40%;}
+@media(max-width:450px){
+    section{margin-left:55%;font-size: small;}
+    nav{width: 40%;}
+    nav ul{width: 35%; font-size: smaller;}
 }
