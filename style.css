@@ -1,0 +1,88 @@
+/*css do html, setando para mover a tela lentamente ao interagir com o menu*/
+html{
+    scroll-behavior: smooth;
+}
+/*css do body*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/*css do conteudo da página*/
+.container {
+    display: flex;
+}
+/*css do menu*/
+nav{
+    position: fixed;
+    top: 0;
+    display: block;
+    height: 200vh;
+    width: 25%;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+/*css da lista do menu*/
+nav ul {
+    list-style-type: none;
+    margin: 10px 0px 0px 0px;
+    padding: 5px;
+    width: 22%;
+    background-color: black;
+    position: fixed;
+    height: 200vh;
+    overflow: auto;
+    color: white;
+}
+/*característica da lista dentro do menu*/
+nav li{
+    padding: 10px;
+}
+/*características do link dentro de cada elemento da lista do menu*/
+nav li a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+/*hover para alterar  cor quando passar o mouse por cima*/
+nav li a:hover:not(.active) {
+    background-color: rgb(72, 65, 72);;
+    color: white;
+}
+/*css dos textos dentro de h1*/
+h1 {
+    color: #333;
+}
+/*css dos paragrafos*/
+p {
+    color: #555;
+}
+/*css do conteudo principal*/
+section{
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 25%;
+}
+/*css das divisões da página*/
+section div{
+    border: 3px solid black;
+    margin-top: 10px;
+    padding: 10px;
+}
+/*css do rodapé*/
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+/*hover para mudar de cor a passar o mouse pelo link*/
+a:hover{
+    color: white;
+}
+/*media quary para responsividade*/
+@media(max-width:450px){
+    section{margin-left:55%;font-size: small;}
+    nav{width: 40%;}
+    nav ul{width: 35%; font-size: smaller;}
+}
