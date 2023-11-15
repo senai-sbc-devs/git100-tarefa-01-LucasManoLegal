@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---importação de elementos externos-->
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital@1&display=swap" rel="stylesheet">
     <script type="text/Javascript" src="script.js"></script>
     <title>GitHub</title>
 </head>
@@ -26,7 +28,7 @@
     <section>
         <!---- cabeçalho--->
         <header id="#cabecalho">
-            <h1>Fluxo detrabalho do Git e GitHub</h1>
+            <h1>Fluxo de trabalho do Git e GitHub</h1>
             <p>Este é um site simples com o objetivo de explicar o fluxo de trabalho com o Git e GitHub.</p>
         </header>
         <!---- conteudo principal--->
@@ -37,6 +39,7 @@
                 <p>Clonar um repositório Git significa criar uma cópia exata do repositório remoto em sua máquina local.</p>
                 <h2>Como Usar:</h2>
                 <p>O comando básico para clonar um repositório é git clone URL_do_repositório. Isso cria uma cópia local do repositório em seu computador, permitindo que você trabalhe nele.</p>
+                <img src="imagens\gitclone.png" alt="imagem representando o git clone">
             </div>
             <div id="Branch">
                 <h1>Branch</h1>
@@ -44,6 +47,7 @@
                 <p>Um branch é uma ramificação separada no histórico do repositório, permitindo que você trabalhe em novas funcionalidades ou correções de bugs sem interferir no código principal.</p>
                 <h2>Como Usar:</h2>
                 <p>Para criar um novo branch, você usa o comando git branch nome_do_branch. Para mudar para um branch existente, use git checkout nome_do_branch ou, a partir do Git 2.23, git switch nome_do_branch.</p>
+                <img src="imagens\gitbranch.png" alt="imagem representando o git branch">
             </div>
             <div id="Commit">
                 <h1>Commit</h1>
@@ -51,6 +55,7 @@
                 <p>Um commit é um ponto no histórico do repositório que armazena as alterações feitas nos arquivos. Cada commit tem uma mensagem associada que descreve as mudanças realizadas.</p>
                 <h2>Como Usar:</h2>
                 <p>Após realizar alterações nos arquivos, você usa git add nome_do_arquivo para preparar as mudanças e git commit -m "Mensagem do commit" para confirmar essas alterações.</p>
+                <img src="imagens\gitcommit.png" alt="imagem representando o git commit">
             </div>
             <div id="Merge">
                 <h1>Merge</h1>
@@ -58,18 +63,20 @@
                 <p>Merging é o processo de combinar as alterações de diferentes branches. Isso é geralmente feito para incorporar o trabalho de um branch de recurso de volta ao branch principal.</p>
                 <h2>Como Usar:</h2>
                 <p>Após concluir o trabalho em um branch, você pode mesclá-lo de volta ao branch principal usando git merge nome_do_branch.</p>
+                <img src="imagens\gitmerge.png" alt="imagem representando o git merge">
             </div>
             <div id="PullRequest">
                 <h1>PullRequest</h1>
                 <h3>Definição:</h3>
-                <p>MEm sistemas como o GitHub, GitLab ou Bitbucket, um pull request (também conhecido como merge request) é uma solicitação para mesclar as alterações de um branch para outro. Isso é comumente usado em colaboração, permitindo que outros revisem e comentem sobre as mudanças antes que sejam mescladas.</p>
+                <p>Em sistemas como o GitHub, GitLab ou Bitbucket, um pull request (também conhecido como merge request) é uma solicitação para mesclar as alterações de um branch para outro. Isso é comumente usado em colaboração, permitindo que outros revisem e comentem sobre as mudanças antes que sejam mescladas.</p>
                 <h2>Como Usar:</h2>
                 <p>Após concluir as alterações em um branch, você cria um pull request na plataforma de hospedagem do seu repositório. Outros membros da equipe podem revisar as mudanças antes de serem mescladas no branch principal.</p>
+                <img src="imagens\pullrequest.png" alt="imagem representando o pullrequest">
             </div>
         </main>
         <!---- Rodapé da página--->
         <footer>
-            Todos os direitos reservados a <a  target="_blank"  href="https://github.com/LucasManoLegal">Lucas Marques</a>
+            Todos os direitos reservados a <a  target="_blank"  href="https://github.com/LucasManoLegal">Lucas Marques</a><br>Desenvolvido por <a href="https://github.com/RogerPenha" target="_blank">Roger Penha</a>
         </footer>
     </section>
 </div>

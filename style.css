@@ -5,7 +5,7 @@ html{
 /*css do body*/
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Sometype Mono', monospace;
 }
 /*css do conteudo da página*/
 .container {
@@ -22,10 +22,15 @@ nav{
     background-color: black;
     text-align: center;
 }
+/*css das imagens*/
+img{
+    width: 100%;
+    height: 40vh;
+}
 /*css da lista do menu*/
 nav ul {
     list-style-type: none;
-    margin: 10px 0px 0px 0px;
+    margin: 0px;
     padding: 5px;
     width: 22%;
     background-color: black;
@@ -73,16 +78,30 @@ section div{
 /*css do rodapé*/
 footer{
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: rgb(196, 187, 187);
+    width: 100%;
+    height: 12vh;
+    color:black;
+    margin-top: 10px;
+    border: 2px solid black;
 }
 /*hover para mudar de cor a passar o mouse pelo link*/
 a:hover{
     color: white;
 }
+/*configuração da fonte do google fontes*/
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    }
 /*media quary para responsividade*/
 @media(max-width:450px){
     section{margin-left:55%;font-size: small;}
     nav{width: 40%;}
     nav ul{width: 35%; font-size: smaller;}
+    img{display: none;}
+    footer{height: 15vh;}
 }
